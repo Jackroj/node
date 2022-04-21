@@ -10,8 +10,8 @@ Create the Node server using the HTTP modules
 
 # Java script important concepts
 Into the js folder above the javascript important concepts are all given.
-1.filters
-2.map
-3.reduce
-4.brackets array 
+-1.filters
+-2.map
+-3.reduce
+-4.brackets array 
   
