@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <h1>Hello</h1>
+    <div class="users"></div>
+    <script>
+// another example
+const url = 'https://reqres.in/api/users?page=1';
+let users = document.querySelector('.users');
+let id = 1;
+const fetchrepo = async() =>{
+    const response = await fetch(url);
+    const data = await response.json();
+    const newData = data.data;
+    const val = newData.map((item) => {
+        // console.log(item.id)
+        return item;
+        users.innerHTML = val;
+    })
+   const unique_id =  val.filter((item) => item.id == id)
+    // console.log(unique_id);
+} 
+fetchrepo();
+// console.log(val);
+// let  = document.querySelector('users');
+    </script>
+</body>
+</html>
